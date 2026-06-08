@@ -173,21 +173,3 @@ go test -cover ./...
 | POST | `/tasks/{id}/assign` | Назначить исполнителя |
 | GET | `/tasks/status/{status}` | Фильтр по статусу |
 
-## Возможные ошибки
-
-### Ошибка подключения к БД
-
-В файле `cmd/server/main.go` найдите строку:
-
-```go
-connStr := "host=localhost port=5432 user=postgres password=0000 dbname=taskdb sslmode=disable"
-```
-Измените `0000` на ваш пароль.
-
-### Порт 8080 занят
-
-Измените порт в файле `.env`:
-
-```env
-SERVER_PORT=8081
-```
