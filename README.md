@@ -35,7 +35,7 @@ CREATE DATABASE taskdb;
 ### 3. Клонирование проекта
 
 ```bash
-git clone [https://github.com/PiPuKaPRo/task-manager.git](https://github.com/PiPuKaPRo/task-manager.git)
+git clone https://github.com/PiPuKaPRo/task-manager.git
 cd task-manager
 ```
 
